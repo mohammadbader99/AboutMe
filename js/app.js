@@ -147,4 +147,4 @@ if (colorFlag === false) {
 
 //End of question 7.
 
-alert('Ok ' + userName + ', your score is: ' + score);
+alert('Ok ' + userName + ', your score is: ' + score + ' out of 7');
