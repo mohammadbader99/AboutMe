@@ -96,10 +96,14 @@ for (let i = 0; i < 4; i++) {
         break;
     }
     else if (age > q6Answer) {
-        alert('Too high - Hint: (18 - 24)');
+        if (i < 3) { //Just to avoid printing a hint after the use of the last attemp
+            alert('Too high - Hint: (18 - 24)');
+        }
     }
     else {
-        alert('Too low - Hint: (18 - 24)');
+        if (i < 3) { //Just to avoid printing a hint after the use of the last attemp
+            alert('Too low - Hint: (18 - 24)');
+        }
     }
 }
 
@@ -135,7 +139,9 @@ for (let i = 0; i < 6; i++) {
     }
 
     if (colorFlag === false) {
-        alert('Incorrect, try again..');
+        if (i < 5) { //Just to avoid printing a hint after the use of the last attemp
+            alert('Incorrect, try again..');
+        }
     }
     else {
         break;
