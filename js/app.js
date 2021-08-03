@@ -129,6 +129,7 @@ for (let i = 0; i < 6; i++) {
             alert('Correct!');
             score = score + 1;
             colorFlag = true;
+            alert('Here is all the possible answers for the question: (' + q7Answer + ')');
             break;
         }
     }
