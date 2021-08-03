@@ -1,5 +1,5 @@
 header {
-    background-color: lightblue;
+    background-color: rgb(62, 95, 107);
 }
 
 h1 {
@@ -16,9 +16,10 @@ background-color: black;
 
 main p {
     font-size: 25px;
-    text-align: center;
-    color: yellow;
+    color: black;
+    background-color: yellow;
     padding: 50px;
+    margin: 15px;
 }
 
 footer {
@@ -27,5 +28,34 @@ footer {
     color: white;
     text-shadow: 2px 2px 2px black;
     padding: 50px;
-    background-color: lightblue;
+    background-color: rgb(62, 95, 107);
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+    padding: 25px;
+}
+
+ol {
+    font-size: 25px;
+    list-style-type: decimal;
+    color: black;
+    background-color: yellow;
+    padding: 50px;
+    margin: 15px;
+}
+ul {
+    font-size: 25px;
+    list-style-type: square;
+    color: black;
+    background-color: yellow;
+    padding: 50px;
+    margin: 15px;
+}
+div {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
 }
