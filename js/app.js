@@ -4,6 +4,10 @@ alert('Welcome to my guessing game..');
 
 let userName = prompt('What is your name?');
 
+while (userName === '' || userName === null) {
+    userName = prompt('Please enter your name..');
+}
+
 alert('Nice name ' + userName + ', lets get started..');
 
 let score = 0;
