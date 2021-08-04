@@ -1,45 +1,6 @@
 'use strict';
 
-alert('Welcome to my guessing game..');
-
-let userName = prompt('What is your name?');
-
-while (userName === '' || userName === null) {
-    userName = prompt('Please enter your name..');
-}
-
-alert('Nice name ' + userName + ', lets get started..');
-
-let q1 = 'Do I eat Mansaf? (Answer with y/n or yes/no)';
-let q1Answer = ['yes', 'y'];
-
-let q2 = 'Am I married? (Answer with y/n or yes/no)';
-let q2Answer = ['no', 'n'];
-
-let q3 = 'Do I live in USA? (Answer with y/n or yes/no)';
-let q3Answer = ['no', 'n'];
-
-let q4 = 'Am I a software-engineer? (Answer with y/n or yes/no)';
-let q4Answer = ['yes', 'y'];
-
-let q5 = 'Can you see me? (Answer with y/n or yes/no)';
-let q5Answer = ['no', 'n'];
-
-let q6 = 'How old are me? (Numbers only)';
-let q6Answer = 23;
-
-let q7 = 'Name something that has a yellow color?';
-let q7Answer = ['sun', 'banana', 'lemon', 'spongebob'];
-
-let score = 0;
-
-
-
 //First 5 questions:
-
-let questionsArray = [q1, q2, q3, q4, q5];
-let answersArray = [q1Answer, q2Answer, q3Answer, q4Answer, q5Answer];
-let flag = false;
 
 function first5Q () {
     for (let i = 0; i < questionsArray.length; i++) {
@@ -119,7 +80,6 @@ function question6 () {
 
 //Question 7:
 function question7 () {
-
     let colorFlag = false;
 
     for (let i = 0; i < 6; i++) {
@@ -158,8 +118,47 @@ function question7 () {
     }
 }
 //End of question 7.
+
+alert('Welcome to my guessing game..');
+
+let userName = prompt('What is your name?');
+
+while (userName === '' || userName === null) {
+    userName = prompt('Please enter your name..');
+}
+
+alert('Nice name ' + userName + ', lets get started..');
+
+let q1 = 'Do I eat Mansaf? (Answer with y/n or yes/no)';
+let q1Answer = ['yes', 'y'];
+
+let q2 = 'Am I married? (Answer with y/n or yes/no)';
+let q2Answer = ['no', 'n'];
+
+let q3 = 'Do I live in USA? (Answer with y/n or yes/no)';
+let q3Answer = ['no', 'n'];
+
+let q4 = 'Am I a software-engineer? (Answer with y/n or yes/no)';
+let q4Answer = ['yes', 'y'];
+
+let q5 = 'Can you see me? (Answer with y/n or yes/no)';
+let q5Answer = ['no', 'n'];
+
+let q6 = 'How old are me? (Numbers only)';
+let q6Answer = 23;
+
+let q7 = 'Name something that has a yellow color?';
+let q7Answer = ['sun', 'banana', 'lemon', 'spongebob'];
+
+let questionsArray = [q1, q2, q3, q4, q5];
+let answersArray = [q1Answer, q2Answer, q3Answer, q4Answer, q5Answer];
+let score = 0;
+let flag = false;
+
 first5Q();
+
 question6();
+
 question7();
 
 alert('Ok ' + userName + ', your score is: ' + score + ' out of 7');
