@@ -33,9 +33,7 @@ let q7Answer = ['sun', 'banana', 'lemon', 'spongebob'];
 
 let score = 0;
 
-first5Q();
-question6();
-question7();
+
 
 //First 5 questions:
 
@@ -160,5 +158,8 @@ function question7 () {
     }
 }
 //End of question 7.
+first5Q();
+question6();
+question7();
 
 alert('Ok ' + userName + ', your score is: ' + score + ' out of 7');
