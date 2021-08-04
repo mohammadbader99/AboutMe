@@ -82,13 +82,13 @@ let ageFlag = false;
 
 for (let i = 0; i < 4; i++) {
 
-    let age = prompt(q6 + ' Attemp ' + (i+1) + ' of 4');
+    let age = Number(prompt(q6 + ' Attemp ' + (i+1) + ' of 4'));
 
     while (isNaN(age) || age == '' || age == null) {
-        age = prompt(q6 + ' Attemp ' + (i+1) + ' of 4');
+        age = Number(prompt(q6 + ' Attemp ' + (i+1) + ' of 4'));
     }
 
-    if (age == q6Answer) {
+    if (age === q6Answer) {
         console.log(age + ' is correct');
         alert('Correct!');
         score = score + 1;
