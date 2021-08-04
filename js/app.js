@@ -34,6 +34,7 @@ let q7Answer = ['sun', 'banana', 'lemon', 'spongebob'];
 let score = 0;
 
 first5Q();
+question6();
 //First 5 questions:
 
 let questionsArray = [q1, q2, q3, q4, q5];
@@ -79,38 +80,40 @@ function first5Q () {
 //End of the first 5 questions.
 
 //Question 6:
+function question6 () {
 
-let ageFlag = false;
+    let ageFlag = false;
 
-for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
 
-    let age = Number(prompt(q6 + ' Attemp ' + (i+1) + ' of 4'));
+        let age = Number(prompt(q6 + ' Attemp ' + (i+1) + ' of 4'));
 
-    while (isNaN(age) || age == '' || age == null) {
-        age = Number(prompt(q6 + ' Attemp ' + (i+1) + ' of 4'));
-    }
+        while (isNaN(age) || age == '' || age == null) {
+            age = Number(prompt(q6 + ' Attemp ' + (i+1) + ' of 4'));
+        }
 
-    if (age === q6Answer) {
-        console.log(age + ' is correct');
-        alert('Correct!');
-        score = score + 1;
-        ageFlag = true;
-        break;
-    }
-    else if (age > q6Answer) {
-        if (i < 3) { //Just to avoid printing a hint after the use of the last attemp
-            alert('Too high - Hint: (18 - 24)');
+        if (age === q6Answer) {
+            console.log(age + ' is correct');
+            alert('Correct!');
+            score = score + 1;
+            ageFlag = true;
+            break;
+        }
+        else if (age > q6Answer) {
+            if (i < 3) { //Just to avoid printing a hint after the use of the last attemp
+                alert('Too high - Hint: (18 - 24)');
+            }
+        }
+        else {
+            if (i < 3) { //Just to avoid printing a hint after the use of the last attemp
+                alert('Too low - Hint: (18 - 24)');
+            }
         }
     }
-    else {
-        if (i < 3) { //Just to avoid printing a hint after the use of the last attemp
-            alert('Too low - Hint: (18 - 24)');
-        }
-    }
-}
 
-if (ageFlag === false) {
-    alert('Sorry, but the correct answer was ' + q6Answer);
+    if (ageFlag === false) {
+        alert('Sorry, but the correct answer was ' + q6Answer);
+    }
 }
 
 //End of question 6.
