@@ -33,44 +33,46 @@ let q7Answer = ['sun', 'banana', 'lemon', 'spongebob'];
 
 let score = 0;
 
-
+first5Q();
 //First 5 questions:
 
 let questionsArray = [q1, q2, q3, q4, q5];
 let answersArray = [q1Answer, q2Answer, q3Answer, q4Answer, q5Answer];
 let flag = false;
 
-for (let i = 0; i < questionsArray.length; i++) {
+function first5Q () {
+    for (let i = 0; i < questionsArray.length; i++) {
 
-    let answer = prompt(questionsArray[i]);
+        let answer = prompt(questionsArray[i]);
 
-    while (answer == null) {
-        answer = prompt(questionsArray[i]);
-    }
-
-    answer = answer.toLowerCase();
-
-    while(answer !== 'y' && answer !== 'n' && answer !== 'yes' && answer !== 'no'){
-        answer = prompt(questionsArray[i]);
-        answer = answer.toLowerCase();
-    }
-
-    flag = false;
-
-    for (let j = 0; j < answersArray[i].length; j++) {
-        if (answer === answersArray[i][j]) {
-            flag = true;
+        while (answer == null) {
+            answer = prompt(questionsArray[i]);
         }
-    }
 
-    if (flag === true) {
-        console.log(answer + ' is correct');
-        alert('Correct!');
-        score = score + 1;
-    }
-    else {
-        console.log(answer + ' is incorrect');
-        alert('Inorrect!');
+        answer = answer.toLowerCase();
+
+        while(answer !== 'y' && answer !== 'n' && answer !== 'yes' && answer !== 'no'){
+            answer = prompt(questionsArray[i]);
+            answer = answer.toLowerCase();
+        }
+
+        flag = false;
+
+        for (let j = 0; j < answersArray[i].length; j++) {
+            if (answer === answersArray[i][j]) {
+                flag = true;
+            }
+        }
+
+        if (flag === true) {
+            console.log(answer + ' is correct');
+            alert('Correct!');
+            score = score + 1;
+        }
+        else {
+            console.log(answer + ' is incorrect');
+            alert('Inorrect!');
+        }
     }
 }
 
@@ -155,3 +157,4 @@ if (colorFlag === false) {
 //End of question 7.
 
 alert('Ok ' + userName + ', your score is: ' + score + ' out of 7');
+
