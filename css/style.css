@@ -44,7 +44,7 @@ main {
 
 main p {
     font-size: 25px;
-    color: black;
+    color: white;
     background-color: rgba(62, 95, 107, 0.5);
     padding: 50px;
     margin: 15px;
@@ -68,7 +68,7 @@ h2 {
 ol {
     font-size: 25px;
     list-style-type: decimal;
-    color: black;
+    color: white;
     background-color: rgba(62, 95, 107, 0.5);
     padding: 50px;
     margin: 15px;
@@ -76,7 +76,7 @@ ol {
 ul {
     font-size: 25px;
     list-style-type: square;
-    color: black;
+    color: white;
     background-color: rgba(62, 95, 107, 0.5);
     padding: 50px;
     margin: 15px;
