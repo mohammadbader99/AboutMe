@@ -1,5 +1,7 @@
 header {
-    background-color: rgb(62, 95, 107);
+    background-color: rgba(62, 95, 107, 1);
+    position: fixed;
+    width: 100%;
 }
 
 h1 {
@@ -7,17 +9,43 @@ h1 {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 2px black;
-    padding: 50px;
+    padding: 25px;
 }
 
+#play {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  a:link{
+    background-color: rgb(62, 95, 107);
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    background-color: white;
+    color: black;
+  }
+
 main {
-background-color: black;
+    background:url(https://torksystems.com/wp-content/uploads/2014/10/Tork-Website-Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    background-size: cover;
+    padding-top: 130px;
 }
 
 main p {
     font-size: 25px;
     color: black;
-    background-color: yellow;
+    background-color: rgba(62, 95, 107, 0.5);
     padding: 50px;
     margin: 15px;
 }
@@ -27,8 +55,8 @@ footer {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 2px black;
-    padding: 50px;
-    background-color: rgb(62, 95, 107);
+    padding: 25px;
+    background-color: rgba(62, 95, 107, 1);
 }
 
 h2 {
@@ -41,7 +69,7 @@ ol {
     font-size: 25px;
     list-style-type: decimal;
     color: black;
-    background-color: yellow;
+    background-color: rgba(62, 95, 107, 0.5);
     padding: 50px;
     margin: 15px;
 }
@@ -49,7 +77,7 @@ ul {
     font-size: 25px;
     list-style-type: square;
     color: black;
-    background-color: yellow;
+    background-color: rgba(62, 95, 107, 0.5);
     padding: 50px;
     margin: 15px;
 }

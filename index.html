@@ -15,6 +15,19 @@
         <h1>
             About Me and Guessing Game
         </h1>
+        <nav id="play">
+            <a href="js/app.js" id = 'game'>Play Guessing Game</a>
+
+            <script>
+                var myLink = document.getElementById('game');
+                myLink.onclick = function(){
+                    var script = document.createElement("script");
+                    script.src = "js/app.js"; 
+                    document.getElementsByTagName("head")[0].appendChild(script);
+                    return false;
+                }
+                </script>
+        </nav>
     </header>
 
     <main>
@@ -59,7 +72,7 @@
         This is footer
     </footer>
 
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
 
 </body>
 </html>
